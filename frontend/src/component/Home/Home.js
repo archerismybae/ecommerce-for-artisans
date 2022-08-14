@@ -27,11 +27,11 @@ const Home = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="ECOMMERCE" />
+          <MetaData title="ECOMMERCE FOR ARTISANS" />
 
           <div className="banner">
             <p>Ecommerce for Artisans</p>            
-
+            <br></br>
             <a href="#container">
               <button>
                 Scroll <CgMouse />

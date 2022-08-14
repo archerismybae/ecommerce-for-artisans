@@ -35,6 +35,12 @@ const Cart = ({ history }) => {
     history.push("/login?redirect=shipping");
   };
 
+  const recommendStuff = () => {
+    if (cartItems.title!==0) {
+      console.log(cartItems);
+    }
+  }
+
   return (
     <Fragment>
       {cartItems.length === 0 ? (
@@ -101,7 +107,8 @@ const Cart = ({ history }) => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+      <button onClick={recommendStuff}>Check Out</button>
+    </Fragment>        
   );
 };
 

@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../../images/cover.jfif");
+  background-image: url("../../images/iStock-891419570.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +20,7 @@
 
 .banner > p {
   font: 300 1.4vmax "Lucida Sans";
+  color: white;
 }
 
 .banner > a > button {

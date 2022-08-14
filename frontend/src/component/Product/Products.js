@@ -11,13 +11,11 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
-  "Laptop",
-  "Footwear",
-  "Bottom",
-  "Tops",
-  "Attire",
-  "Camera",
-  "SmartPhones",
+  "Toys",
+    "HomeDecor",
+    "Shoes",
+    "Jewellery",
+    "Clothes",
 ];
 
 const Products = ({ match }) => {
@@ -70,6 +68,15 @@ const Products = ({ match }) => {
           <h2 className="productsHeading">Products</h2>
 
           <div className="products">
+            {products &&
+              products.map((product) => (
+                <ProductCard key={product._id} product={product} />
+              ))}
+          </div>
+
+          <h2 className="recommendations">Recommended products</h2>
+
+          <div className="reccs">
             {products &&
               products.map((product) => (
                 <ProductCard key={product._id} product={product} />
